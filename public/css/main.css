@@ -1,0 +1,38 @@
+.header-btns {
+    width: auto;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+#login-btn {
+    text-decoration: none;
+    color: #247fe4;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 19.5px;
+    background-color: #f0f0f0;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+#signup-btn {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 19.5px;
+    background-color: #247fe4;
+    padding: 12px 25px;
+    cursor: pointer;
+
+}
