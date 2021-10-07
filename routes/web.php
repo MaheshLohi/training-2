@@ -15,8 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::get('/login', function () {
     return view('login');
 });
 
 
+=======
+Route::get('/', function () {
+    return view('signup');
+});
+>>>>>>> 88035a5caa1c148c1142cbb7e6af87244b97cf1f
