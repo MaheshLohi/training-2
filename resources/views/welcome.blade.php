@@ -15,8 +15,8 @@
     <body>
         <header>
             <div class="header-btns">
-                <a id="login-btn" href="#">Log in</a>
-                <a id="signup-btn" href="#">Sign up</a>
+                <a id="login-btn" href="/login">Log in</a>
+                <a id="signup-btn" href="/signup">Sign up</a>
             </div>
         </header>
         <h1>Hello world</h1>
