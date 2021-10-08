@@ -17,7 +17,7 @@ class CreateNpciusersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->int('phonenumber')->unique();
+            $table->integer('phonenumber')->unique();
             $table->string('password');
             $table->string('Organization');
             $table->rememberToken();
