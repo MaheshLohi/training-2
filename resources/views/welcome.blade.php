@@ -19,7 +19,7 @@
                 <a id="signup-btn" href="/signup">Sign up</a>
             </div>
         </header>
-        <h1>Hello world</h1>
+        
         
     </body>
 </html>
