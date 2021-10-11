@@ -79,12 +79,13 @@ hr {
 }
 
 
-}
+
     </style>
 
 </head>
 <body>
-<form action=" " >
+<form action="/newuser" method="POST" >
+  {{ csrf_field() }}
   <div class="container">
     <h1>Create Account</h1>
     
@@ -99,10 +100,10 @@ hr {
     <input type="text" placeholder="Enter Phone Number" name="phonenumber" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="password" required>
 
     <label for="psw-confirm"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
+    <input type="password" placeholder="Confirm Password" name="confpassword" required>
     
     <label for="organization"><b>Organization</b></label>
     <input type="text" placeholder="Enter Organization" name="organization" required>
