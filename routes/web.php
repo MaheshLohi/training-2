@@ -14,7 +14,9 @@
 use App\Http\Controllers\npcicontroller;
 
 Route::get('/', function () {
+    
     return view('welcome');
+
 });
 
 Route::get('/login', function () {
