@@ -28,3 +28,4 @@ Route::get('/signup', function () {
 
 
 Route::post('/newuser','npcicontroller@addUser');
+
