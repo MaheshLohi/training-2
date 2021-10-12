@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -19,6 +20,26 @@
                 <a id="signup-btn" href="/signup">Sign up</a>
             </div>
         </header>
+
+
+        <?php 
+        $ch = curl_init();
+        $url = "https://npci-qa-api.open.money/api/consumer/get-catalogues-for-category";
+        
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $result = curl_exec($ch);
+        print_r($result);
+
+        // if($e = curl_error($ch)) {
+        //     echo $e;
+        // } else {
+        //     $decode = json_decode($result);
+        //     echo $decode;
+        // }
+        ?>
+
         
         
     </body>
