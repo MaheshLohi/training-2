@@ -8,8 +8,8 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-    <style>
+    <link rel="stylesheet" href="/css/signup.css">
+    <!-- <style>
      body {
          font-family: Arial, Helvetica, sans-serif;
         }
@@ -69,9 +69,7 @@ button:hover {
   
   
 }
-h1 {
-    
-}
+
 
 hr {
   border: 1px solid #f1f1f1;
@@ -79,13 +77,13 @@ hr {
 }
 
 
-
-    </style>
+}
+    </style> -->
 
 </head>
 <body>
 <form action="/newuser" method="POST" >
-  {{ csrf_field() }}
+{{ csrf_field() }}
   <div class="container">
     <h1>Create Account</h1>
     
@@ -103,7 +101,7 @@ hr {
     <input type="password" placeholder="Enter Password" name="password" required>
 
     <label for="psw-confirm"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Confirm Password" name="confpassword" required>
+    <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
     
     <label for="organization"><b>Organization</b></label>
     <input type="text" placeholder="Enter Organization" name="organization" required>
@@ -112,11 +110,12 @@ hr {
     
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="button" class="cancelbtn" href="/welcome">Cancel</button>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
 </form>  
+<a href="/welcome"></a>
 
     
 </body>

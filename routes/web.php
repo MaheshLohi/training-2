@@ -27,5 +27,6 @@ Route::get('/signup', function () {
 });
 
 
-Route::post('/newuser','npcicontroller@addUser');
+Route::post('newuser','npcicontroller@addUser');
 
+Route::post('/','apicontroller@listApiData');

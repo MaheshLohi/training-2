@@ -1,8 +1,8 @@
 <?php
 
-
-
 public function getApiData()
+
+
     {
         $ch = curl_init();
         $url = 'https://npci-qa-api.open.money/api/consumer/get-catalogues-for-category';
