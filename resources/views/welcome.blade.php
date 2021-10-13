@@ -20,27 +20,47 @@
                 <a id="signup-btn" href="/signup">Sign up</a>
             </div>
         </header>
+        <div class="content">
+            <?php $count = -1;?>
+            @foreach($dataObj as $datas)
+            <?php $count++;
+             if ($count % 3 == 0) {  
+                echo '<div class = "row">';
+            } ?>
+            <div class="container">
+                <div class="top">
+                   <img src=" " alt=" ">
+                   <a href=" ">Details</a>
+                </div>
 
+                <div class="middle">
+                  <h3> kjbiujn</h3>
+                  <h2> jhqvbwdiun</h2>
+                </div>
 
-        <?php 
-        $ch = curl_init();
-        $url = "https://npci-qa-api.open.money/api/consumer/get-catalogues-for-category";
+                <div class="bottom">
+                <a href="/subscribe">Subscribe</a>
+                <a href="/documentation" >view Documentation</a>
+                </div>
+            </div>
+            <?php if ($count % 3 == 2) {
+                echo '</div>';
+            } ?>
+        @endforeach
+            
+        </div>
         
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-        $result = curl_exec($ch);
-        print_r($result);
-
-        // if($e = curl_error($ch)) {
-        //     echo $e;
-        // } else {
-        //     $decode = json_decode($result);
-        //     echo $decode;
-        // }
-        ?>
 
         
         
     </body>
 </html>
+
+
+
+
+
+
+
+
+

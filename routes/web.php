@@ -25,5 +25,5 @@ Route::get('/signup', function () {
 
 
 Route::post('/newuser','npcicontroller@addUser');
-Route::get('/','npcicontroller@ProductList');
+Route::get('/','apicontroller@ProductList');
 
