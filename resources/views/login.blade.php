@@ -10,113 +10,40 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet">
 
-    <!-- Styles -->
-    <style>
-        html,
-        body {
-            background-color: white;
-            color: #636b6f;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            height: 100vh;
-            /* margin: 0; */
-            padding-left: 300px;
-            
-            /* padding-top: 100px; */
-            
-        }
-
-        .full-height {
-            height: 100vh;
-        }
-
-
-
-        .flex-center {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        .position-ref {
-            position: relative;
-        }
-
-        .top-right {
-            position: absolute;
-            right: 10px;
-            top: 18px;
-        }
-
-        #main-container{
-            padding:10px;
-            height: 400px;
-            width:300px;
-            background-color: burlywood;
-            margin-top: 200px;
-        }
-        #password-div{
-            display:flex;
-            justify-content:space-between;
-        }
-        #login-head{
-            display:flex;
-            justify-content:space-between;
-        }
-
-        .content {
-            text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
-        }
-
-        .links>a {
-            color: #636b6f;
-            padding: 0 25px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: .1rem;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-
-        .m-b-md {
-            margin-bottom: 30px;
-        }
-    </style>
 </head>
 
 <body>
     <div id="main-container">
-    <div id="login-head">
-        <h2>Login</h2>
-        <img src="/resources/img/download.png">
-    </div>
-    <p>Let's accelerate your product journey</p>
-    <button type="button">Sign in with</button>
-    <p>or signup with email</p>
-    <form id="login">
+        <div id="login-head">
+            <div>
+                <h2>Login</h2>
+                <p>Let's accelerate your product journey</p>
+            </div>
+            <div id="login-head-right">
+                <img src="/resources/img/download.png">
+            </div>
+        </div>
+        <div class="signUpGoogle">Sign in with <img alt="logo" src="/resources/img/google-icon (1).svg"></div>
 
+   
+    <p>or signup with</p>
+
+    <form id="login">
         <p>Email Id</p>
         <input type="text" id="email-id">
-        <div id="password-div">
-            <p>
-                Password
-            </p>
-            <p>Forgot Password</p>
-            </div>
-            <input type="text" id="password">
-        
-        <input type="submit" id="submit-button" value="Submit">
-
+        <p class="label">Password
+            <span class="required">*</span>
+            <span class="forgot-pass-fl-right">Forgot Password?</span>
+        </p>
+        <input type="text" id="password">
+        <br>
+        <div id="bottom-login">
+            <input type="submit" id="submit-button" value="Submit">
+            <a class="forgot-pass-fl-right" id="register" href="">Register</a>
+        </div>
     </form>
-
-
-
-
     </div>
 </body>
 
