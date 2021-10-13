@@ -13,15 +13,15 @@ class ProductList {
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        // curl_setopt($ch,CURLOPT_POSTFIELDS,'');
+        curl_setopt($ch,CURLOPT_POSTFIELDS,'');
         
-        $resp = curl_exec($ch);
+        $result = curl_exec($ch);
         
-        if($e = curl_error($ch)){
-            echo $e;
+        if($er = curl_error($ch)){
+            echo $er;
         }
         else{
-            $decoded = json_decode($resp, true);
+            $decoded = json_decode($result, true);
             return $decoded;
         }        
     }
