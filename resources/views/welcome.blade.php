@@ -22,6 +22,7 @@
         
 
        @foreach($listproducts as $item)
+       <div class="grid-container">
         <div class="container">
             <div class="top">
                <img src=" " alt=" ">
@@ -40,6 +41,6 @@
           @endforeach  
 
         </div>
-        
+        </div>
     </body>
 </html>

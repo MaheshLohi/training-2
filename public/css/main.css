@@ -36,3 +36,8 @@
     cursor: pointer;
 
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+}

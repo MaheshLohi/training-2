@@ -107,10 +107,9 @@ hr {
     <input type="text" placeholder="Enter Organization" name="organization" required>
    
 
-    
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn" href="/welcome">Cancel</button>
+       <button type="button" class="cancelbtn" ><a href="/" >Cancel</a></button>>
       <button type="submit" class="signupbtn">Sign Up</button>
     </div>
   </div>
