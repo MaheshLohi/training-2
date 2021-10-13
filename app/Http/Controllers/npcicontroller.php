@@ -4,13 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Repository\UserRepo;
+use App\Services\ProductList;
+// use Symfony\Component\VarDumper\Cloner\Data;
 
 class npcicontroller extends Controller
 {
     public $obj;
-    public function __construct(UserRepo $userRepo)
+    public $productObj;
+    public function __construct(UserRepo $userRepo, ProductList $productClass)
     {
         $this->obj = $userRepo;
+        $this->productObj = $productClass;
+
     }
 
 
@@ -25,5 +30,11 @@ class npcicontroller extends Controller
         $this->obj ->addUser($name, $email, $phonenumber, $password, $organisation);
 
         return redirect('/')->with('mssg', 'New User created');
+    }
+
+    public function ProductList() 
+    {
+        $productData=$this->productObj ->getApiData();
+        return view("welcome",["dataObj"=>$productData['data']]);
     }
 }

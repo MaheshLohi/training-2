@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
@@ -19,28 +20,44 @@
                 <a id="signup-btn" href="/signup">Sign up</a>
             </div>
         </header>
+        <div class="content">
+            <?php $count = -1;?>
+            @foreach($dataObj as $datas)
+            <?php $count++;
+             if ($count % 3 == 0) {  
+                echo '<div class = "row">';
+            } ?>
+            <div class="container">
+                <div class="top">
+                   <img src=" " alt=" ">
+                   <a href=" ">Details</a>
+                </div>
+
+                <div class="middle">
+                  <h3> kjbiujn</h3>
+                  <h2> jhqvbwdiun</h2>
+                </div>
+
+                <div class="bottom">
+                <a href="/subscribe">Subscribe</a>
+                <a href="/documentation" >view Documentation</a>
+                </div>
+            </div>
+            <?php if ($count % 3 == 2) {
+                echo '</div>';
+            } ?>
+        @endforeach
+            
         
-
-       @foreach($listproducts as $item)
-       <div class="grid-container">
-        <div class="container">
-            <div class="top">
-               <img src=" " alt=" ">
-               <a href=" ">Details</a>
-            </div>
-
-            <div class="middle">
-              <h3> </h3>
-              <h2> </h2>
-            </div>
-
-            <div class="bottom">
-            <a href="/subscribe">Subscribe</a>
-            <a href="/documentation" >view Documentation</a>
-            </div>
-          @endforeach  
-
-        </div>
         </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
