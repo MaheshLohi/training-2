@@ -1,6 +1,11 @@
 <?php
 
-public function getApiData()
+namespace App\services;
+
+
+ class listproducts {
+   
+    public function getApiData()
 
 
     {
@@ -22,5 +27,5 @@ public function getApiData()
         }
 
    
-    }
+    }}
 ?>

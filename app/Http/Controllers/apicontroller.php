@@ -18,7 +18,7 @@ class apicontroller extends Controller
         
         public function listApiData()
          {
-            $apiData = $this->apiModel->getApiData();
+            $apiData = $this->ApiModel->getApiData();
             // $this->obj ->ApiModel->view($decoded);
             return view('welcome', ['listproducts' => $apiData['data']]);
         }

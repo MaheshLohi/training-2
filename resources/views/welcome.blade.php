@@ -20,6 +20,26 @@
             </div>
         </header>
         
+
+       @foreach($listproducts as $item)
+        <div class="container">
+            <div class="top">
+               <img src=" " alt=" ">
+               <a href=" ">Details</a>
+            </div>
+
+            <div class="middle">
+              <h3> </h3>
+              <h2> </h2>
+            </div>
+
+            <div class="bottom">
+            <a href="/subscribe">Subscribe</a>
+            <a href="/documentation" >view Documentation</a>
+            </div>
+          @endforeach  
+
+        </div>
         
     </body>
 </html>
