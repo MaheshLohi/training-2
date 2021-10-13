@@ -13,11 +13,11 @@
 
 use App\Http\Controllers\npcicontroller;
 
-Route::get('/', function () {
+// Route::get('/', function () {
     
-    return view('welcome');
+//     return view('welcome');
 
-});
+// });
 
 Route::get('/login', function () {
     return view('login');
@@ -29,5 +29,7 @@ Route::get('/signup', function () {
 });
 
 
-Route::post('/newuser','npcicontroller@addUser');
+Route::post('newuser','npcicontroller@addUser');
+
+Route::get('/','apicontroller@listApiData');
 
