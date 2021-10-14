@@ -30,17 +30,19 @@
             <div class="container">
                 <div class="top">
                    <img src=" " alt=" ">
-                   <a href=" ">Details</a>
+                   <a href="">Details</a>
                 </div>
 
                 <div class="middle">
                   <h2> {{ $datas['name'] }}</h2>
                   <h3> by {{ $datas['provider_name'] }}</h3>
                   
-                  <p><?php
-$str = $datas['about_us'];
-echo htmlspecialchars_decode($str);
-?></p>
+                  <p id="aboutus">
+                      <?php
+                        $str = $datas['about_us'];
+                        echo htmlspecialchars_decode($str);
+                    ?>
+                    </p>
                 </div>
 
                 <div class="bottom">
