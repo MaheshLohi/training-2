@@ -37,7 +37,7 @@
                   <h2> {{ $datas['name'] }}</h2>
                   <h3> by {{ $datas['provider_name'] }}</h3>
                   
-                  <p id="aboutus">
+                  <p>
                       <?php
                         $str = $datas['about_us'];
                         echo htmlspecialchars_decode($str);
@@ -55,11 +55,8 @@
             } ?>
         @endforeach
             
+        
         </div>
-        
-
-        
-        
     </body>
 </html>
 
