@@ -1,12 +1,15 @@
 <?php
 
-namespace  app\services;
-
-class listproducts{
+namespace App\services;
 
 
 
-public function getApiData()
+
+
+class ProductList {
+
+    public function getApiData()
+
     {
         $ch = curl_init();
         $url = 'https://npci-qa-api.open.money/api/consumer/get-catalogues-for-category';
@@ -17,20 +20,25 @@ public function getApiData()
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch,CURLOPT_POSTFIELDS,'');
-
-        $resp = curl_exec($ch);
-
-        if($e = curl_error($ch)){
-            echo $e;
+        
+        $result = curl_exec($ch);
+        
+        if($er = curl_error($ch)){
+            echo $er;
         }
         else{
-            $decoded = json_decode($resp, true);
+            $decoded = json_decode($result, true);
             return $decoded;
+<<<<<<< HEAD:app/services/listproducts.php
         }
         
         
     }
 
 
+=======
+        }        
+>>>>>>> 7fc073c108c0af3e6a503df48db0a2e1365310c3:app/services/ProductList.php
     }
+}
 ?>
