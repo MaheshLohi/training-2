@@ -23,7 +23,7 @@
         </header>
         <div class="content">
             <?php $count = -1;?>
-            @foreach($dataObj as $datas)
+        @foreach($dataObj as $datas)
             <?php $count++;
              if ($count % 3 == 0) {
                 echo '<div class = "row">';
@@ -31,7 +31,7 @@
             <div class="container">
                 <div class="top">
                    <img src=" " alt=" ">
-                   <a href="">Details</a>
+                   <a href=" ">Details</a>
                 </div>
                 <div class="middle">
                   <h2> {{ $datas['name'] }}</h2>

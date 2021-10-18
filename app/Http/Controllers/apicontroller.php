@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\services\ProductList;
 
@@ -19,6 +21,4 @@ class apicontroller extends Controller
     }
 
 
-
-  
 ?>  
