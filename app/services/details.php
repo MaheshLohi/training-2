@@ -2,6 +2,7 @@
 
 
 namespace App\services;
+use App\Http\Controllers\detailscontroller;
 
 
 

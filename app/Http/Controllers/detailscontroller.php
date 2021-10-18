@@ -2,19 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\services\Details;
+
 use Illuminate\Http\Request;
 
-class detailscontroller extends Controller
+class DetailsController extends Controller
 {
     public $detailsObj;
     public function __construct( Details $detailsClass)
     {
         $this->detailsObj = $detailsClass;
     }
-    public function Details()
+    public function Details($id)
     {
-        $detailsData=$this->detailObj ->Details();
-        // return view("welcome",["detailsObj"=>$detailsData['data']]);
+        $detailsData=$this->detailsObj->getDetails($id);
+        // print_r($detailsData);
+        return view("details",["detailsObj"=>$detailsData['data'][0]]);
     }                     
     
 
