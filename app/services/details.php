@@ -2,12 +2,13 @@
 
 
 namespace App\services;
+use App\Http\Controllers\detailscontroller;
 
 
 
 
 
-class Details {
+class details {
 
     public function getDetails($uuid)
 
