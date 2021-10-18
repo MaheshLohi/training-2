@@ -29,16 +29,7 @@ class ProductList {
         else{
             $decoded = json_decode($result, true);
             return $decoded;
-<<<<<<< HEAD:app/services/listproducts.php
-        }
-        
-        
-    }
-
-
-=======
         }        
->>>>>>> 7fc073c108c0af3e6a503df48db0a2e1365310c3:app/services/ProductList.php
     }
 }
 ?>
