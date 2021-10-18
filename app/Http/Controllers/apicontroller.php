@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\services\ProductList;
+use Exception;
 
 class apicontroller extends Controller
 {
@@ -14,7 +15,12 @@ class apicontroller extends Controller
     public function ProductList()
     {
         $productData=$this->productObj ->getApiData();
-        return view("welcome",["dataObj"=>$productData['data']]);
+        try{
+            return view("welcome",["dataObj"=>$productData['data']]);
+        }
+        catch(Exception $e){
+            print_r('error');
+        }
     }                     
     }
 

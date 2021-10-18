@@ -46,8 +46,8 @@
                 </div>
 
                 <div class="bottom">
-                <a href="/subscribe">Subscribe</a>
-                <a href="/documentation" >view Documentation</a>
+                    <a href="/documentation" >view Documentation</a>
+                    <a href="/subscribe">Subscribe</a>
                 </div>
             </div>
             <?php if ($count % 3 == 2) {
