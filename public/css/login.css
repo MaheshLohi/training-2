@@ -82,9 +82,7 @@ html,
         justify-content: space-around;
     }
 
-    #forgot{
-
-    }
+    
     .label {
         opacity: .8;
         color: rgba(0,0,0,.85);
@@ -101,7 +99,7 @@ html,
 
     .signUpGoogle{
         display: flex;
-    justify-content: center;
+        justify-content: center;
         width:90%;
         height: 15px;
         text-align: center;
@@ -132,8 +130,8 @@ html,
     }
         img{
             display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+            justify-content: space-between;
+            margin-bottom: 50px;
         }
         #password-div{
             display:flex;

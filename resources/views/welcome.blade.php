@@ -29,7 +29,7 @@
             } ?>
             <div class="container">
                 <div class="top">
-                   <img src=" " alt=" ">
+                   <img src=" " alt="logo">
                    <a href="/details/{{$datas['uuid']}}">Details</a>
                 </div>
 
@@ -41,13 +41,13 @@
                       <?php
                         $str = $datas['about_us'];
                         echo htmlspecialchars_decode($str);
-                    ?>
+                       ?>
                     </p>
                 </div>
 
                 <div class="bottom">
-                <a href="/subscribe">Subscribe</a>
-                <a href="/documentation" >view Documentation</a>
+                    <a href="/documentation" >view Documentation</a>
+                    <a href="/subscribe">Subscribe</a>
                 </div>
             </div>
             <?php if ($count % 3 == 2) {
