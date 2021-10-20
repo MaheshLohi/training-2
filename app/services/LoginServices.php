@@ -20,10 +20,11 @@ class LoginServices {
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         $result = curl_exec($ch);
         return json_decode($result);
-
     }
 
-    public function logoutApi($result, $token) {
+
+    public function logoutApi($result, $token)
+    {
         $ch = curl_init();
         $url = "https://npci-qa-api.open.money/api/consumer/logout?email=$email&Authorization=$token";
         curl_setopt($ch, CURLOPT_URL, $url);

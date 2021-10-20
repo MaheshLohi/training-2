@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\npcicontroller;
 
 
@@ -26,5 +27,10 @@ Route::get('/signup', function () {
 
 Route::post('/newuser','npcicontroller@addUser');
 Route::get('/','apicontroller@ProductList');
-Route::get('/details/{id}','DetailsController@details');
+Route::get('/details/{id}','DetailsController@Details');
+Route::post('/login','LoginController@login');
+
+Route::get('/profile', function () {
+    return view('profile');
+});
 

@@ -27,23 +27,23 @@
         </div>
         <div class="signUpGoogle">Sign in with <img alt="logo" src="/resources/img/google-icon (1).svg"></div>
 
-   
-    <p>or signup with</p>
+        <p> or signup with </p>
 
-    <form id="login" action="welcome" method="post">
-        <p>Email Id</p>
-        <input type="text" id="email-id">
-        <p class="label">Password
+     <form id="login" action="/login" method="post">
+     {{ csrf_field() }}
+         <p>Email Id</p>
+         <input type="text" id="email-id">
+         <p class="label">Password
             <span class="required">*</span>
             <span class="forgot-pass-fl-right">Forgot Password?</span>
-        </p>
-        <input type="text" id="password">
-        <br>
-        <div id="bottom-login">
-            <input type="submit" id="submit-button" value="Submit" >
-            <a class="forgot-pass-fl-right" id="register" href="">Register</a>
-        </div>
-    </form>
+         </p>
+         <input type="text" id="password">
+         <br>
+         <div id="bottom-login">
+              <input type="submit" id="submit-button" value="Submit" >
+              <a class="forgot-pass-fl-right" id="register" href="">Register</a>
+         </div>
+     </form>
     </div>
-</body>       
+ </body>       
 </html>
