@@ -11,10 +11,10 @@ class npcicontroller extends Controller
 {
     public $obj;
     public $productObj;
-    public function __construct(UserRepo $userRepo, ProductList $productClass)
+    public function __construct(UserRepo $userRepo)
     {
         $this->obj = $userRepo;
-        $this->productObj = $productClass;
+        //$this->productObj = $productClass;
 
     }
 
@@ -29,7 +29,7 @@ class npcicontroller extends Controller
         // print_r("hello" .$password );
         $this->obj ->addUser($name, $email, $phonenumber, $password, $organisation);
 
-        return redirect('/')->with('mssg', 'New User created');
+       // return redirect('/')->with('mssg', 'New User created');
     }
 
     

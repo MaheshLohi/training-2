@@ -14,6 +14,7 @@
 use App\Http\Controllers\npcicontroller;
 
 
+
 Route::get('/login', function () {
     return view('login');
 });
@@ -22,7 +23,6 @@ Route::get('/login', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
-
 
 Route::post('/newuser','npcicontroller@addUser');
 Route::get('/','apicontroller@ProductList');

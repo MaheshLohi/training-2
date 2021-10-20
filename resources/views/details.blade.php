@@ -7,17 +7,13 @@
     <title>API Bazaar</title>
 </head>
 <body>
+    <div class="">
 
-<h1>{{ $detailsObj['name'] }}</h1>
-<h3>by {{ $detailsObj['provider_name']}}</h3>
-<br><br>
+    </div>
 
-<p>
-    <?php 
-    $str = $detailsObj['about_us'];
-    echo htmlspecialchars_decode($str);
-    ?>
-</p>
-    
+
+
+
+
 </body>
 </html>

@@ -30,7 +30,7 @@
    
     <p>or signup with</p>
 
-    <form id="login">
+    <form id="login" action="welcome" method="post">
         <p>Email Id</p>
         <input type="text" id="email-id">
         <p class="label">Password
@@ -40,11 +40,10 @@
         <input type="text" id="password">
         <br>
         <div id="bottom-login">
-            <input type="submit" id="submit-button" value="Submit">
+            <input type="submit" id="submit-button" value="Submit" >
             <a class="forgot-pass-fl-right" id="register" href="">Register</a>
         </div>
     </form>
     </div>
-</body>
-
+</body>       
 </html>
