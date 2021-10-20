@@ -30,7 +30,8 @@
    
     <p>or signup with</p>
 
-    <form id="login">
+    <form id="login" action="/login" method="POST">
+        {{ csrf_field() }}
         <p>Email Id</p>
         <input type="text" id="email-id">
         <p class="label">Password
@@ -40,8 +41,8 @@
         <input type="text" id="password">
         <br>
         <div id="bottom-login">
-            <input type="submit" id="submit-button" value="Submit">
-            <a class="forgot-pass-fl-right" id="register" href="">Register</a>
+            <input type="submit" id="submit-button" value="Login">
+            <a class="forgot-pass-fl-right" id="register" href="/signup">Register</a>
         </div>
     </form>
     </div>
