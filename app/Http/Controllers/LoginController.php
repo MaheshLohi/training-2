@@ -17,7 +17,8 @@ class LoginController extends Controller {
             session(['user' => $user->data]);
             return redirect(('/profile'));
         } catch(Exception $e) {
-            return view('error',['error'=>'Unable to login please try after sometime']);
+            print_r($user);
+            // return view('error',['error'=>'Unable to login please try after sometime']);
         }
     }
 
@@ -29,7 +30,8 @@ class LoginController extends Controller {
         $this->apiCall->logoutApi($user->email, $user->token);
         return redirect('/login')->with('alert', 'Logged out successfully');
        }catch(Exception $e){
-           return view('error',['error'=>'An error occured']);
+           print_r("An error has occured");
+        //    return view('error',['error'=>'An error occured']);
        }
     }
     public function userHome()

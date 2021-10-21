@@ -29,6 +29,7 @@ Route::post('/newuser','npcicontroller@addUser');
 Route::get('/','apicontroller@ProductList');
 Route::get('/details/{id}','DetailsController@Details');
 Route::post('/login','LoginController@login');
+Route::get('/logout','LoginController@logout');
 
 Route::get('/profile', function () {
     return view('profile');

@@ -23,13 +23,14 @@ class LoginServices {
 
     }
 
-    public function logoutApi($result, $token) {
+    public function logoutApi($email, $token) {
         $ch = curl_init();
         $url = "https://npci-qa-api.open.money/api/consumer/logout?email=$email&Authorization=$token";
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = json_decode(curl_exec($ch), true);
-        return $response['message'];
+        // return $response['message'];
+        print_r($response['message']);
     }
 
 }

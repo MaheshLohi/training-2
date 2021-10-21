@@ -15,7 +15,7 @@
     <body>
         <header>
             <div class="header-btns">
-                <a id="login-btn" href="/welcome">Log out</a>
+                <a id="login-btn" href="/logout">Log out</a>
                 <!-- <a id="signup-btn" href="/signup">Sign up</a> -->
             </div>
         </header>
