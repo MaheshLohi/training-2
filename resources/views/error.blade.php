@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   @foreach($productDetails as $item)
-        <h2>{{$item['name']}}</h2>
-        <h3>By {{$item['provider_name']}}</h3>
-        <p>{{$item['about_us']}}</p>
-    @endforeach
+    <title>Error</title>
 
+     <style>
+         div{
+             text-align: center;
+             width: 100%;
+         }
+     </style>    
+</head>
+
+<body>
+    <div class="container">
+       <h3>{{$error}}</h3>
+    </div>
 </body>
 </html>

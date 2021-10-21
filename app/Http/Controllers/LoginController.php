@@ -32,6 +32,7 @@ class LoginController extends Controller {
            return view('error',['error'=>'An error occured']);
        }
     }
+
     public function userHome()
     {
         if (!session('user')) {
@@ -42,4 +43,5 @@ class LoginController extends Controller {
         }
     }
 }
+
 ?>

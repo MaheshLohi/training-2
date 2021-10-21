@@ -15,8 +15,10 @@ class detailscontroller extends Controller
     {
         $detailsData=$this->detailsObj->getDetails($id);
         // print_r($detailsData);
+        if($detailsData['data']){
         return view("details",["detailsObj"=>$detailsData['data'][0]]);
-    }                     
-    
+    }  
+    return view ('details',['message'=>"No data found"]);                  
+}
 
 }
